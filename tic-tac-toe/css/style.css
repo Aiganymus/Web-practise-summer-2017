@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #977BAB;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.board{
+	width: 450px;
+	height: 450px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	position: relative;
+}
+
+.square{
+	color: #93BFB6;
+	font-size: 100px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	
+	width: 150px;
+	height: 150px;
+	background: #6F2480; 
+	cursor: pointer;
+	transition: all ease 0.7s;
+}
+
+.square:hover{
+	background: #10D2E5;
+}
+
+.results {
+	width: 390px;
+	height: 100px;
+	display: flex;
+}
+
+.results div {
+	width: 130px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+}
+
+.number {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+
+.top {
+	border-bottom: 3px solid #81E2E6;
+}
+
+.left {
+	border-right: 3px solid #81E2E6;
+}
+
+.modal{
+	position: absolute;
+	left: 75px;
+	top: 100px;
+	visibility: hidden;
+	color: #6F2480;
+	width: 300px;
+	height: 250px;
+	background: #81E2E6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
